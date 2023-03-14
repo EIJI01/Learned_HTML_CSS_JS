@@ -41,17 +41,16 @@ const increasePeople = () => {
 };
 const decreasePeople = () => {
   //* check numberOfPeopleTotal variable have to not equal -number .
-  if (numberOfPeopleTotal >= 1) {
-    //* Decrease amount people one by one.
-    numberOfPeopleTotal -= 1;
-
-    //* Show update value to tag HTML.
-    numberOfPeopleDiv.innerText = numberOfPeopleTotal;
-
-    //* call function for show value on tag {id = perPersonTotal};
-    calculateBill();
+  if (numberOfPeopleTotal <= 1) {
+    return;
   }
-  if (numberOfPeopleTotal <= 0) {
-    perPersonTotalDiv.innerText = `$0.00`;
-  }
+
+  //* Decrease amount people one by one.
+  numberOfPeopleTotal -= 1;
+
+  //* Show update value to tag HTML.
+  numberOfPeopleDiv.innerText = numberOfPeopleTotal;
+
+  //* call function for show value on tag {id = perPersonTotal};
+  calculateBill();
 };
