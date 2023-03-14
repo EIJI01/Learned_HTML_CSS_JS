@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&amp;display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/Dom.css">
+    <link rel="stylesheet" href="../Project/Dom.css">
     <title>Tip Calculator</title>
 </head>
 <body>
@@ -18,14 +18,14 @@
             <div class="title">Bill total</div>
             <div class="inputContainer">
                 <span>$</span>
-                <input conkeyup="calculateBill()" type="text" id="billTotalInput" placeholder="0.00"/>
+                <input onkeyup="calculateBill()" type="text" id="billTotalInput" placeholder="0.00"/>
             </div>
         </div>
         <div class="container">
             <div class="title">Tip</div>
             <div class="inputContainer">
                 <span>%</span>
-                <input type="text" id="tipInput" placeholder="10"/>
+                <input onkeyup="calculateBill()" type="text" id="tipInput" placeholder="10"/>
             </div>
         </div>
         <div class="container" id="bottom">
@@ -49,7 +49,7 @@
             <div class="total" id="perPersonTotal">$0.00</div>
         </div>
     </div>
-    <script type="text/javascript" src="../JS/Dom.js"></script>
+    <script type="text/javascript" src="../Project/Dom.js"></script>
 
 </body>
 </html>
