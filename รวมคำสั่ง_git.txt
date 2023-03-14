@@ -1,0 +1,37 @@
+<-----------------create a new repository on the command line--------------->
+echo "# My_Project" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/EIJI01/My_Project.git
+git push -u origin main
+
+<-----------------push an existing repository from the command line--------------->
+git remote add origin https://github.com/EIJI01/My_Project.git
+git branch -M main
+git push -u origin main
+
+<-----Git bash------>
+#คำสั่งดู version git: git --version
+#คำสั่ง clear: clear
+#การดู list การตั่งค่า: git config --list
+#คำสั่งระบุ email ที่สมัครใน github: git config --global user.email "chanyut281144@gmail.com" 
+#คำสั่งระบุ name ที่ตั้งใน github: git config --global user.name "Chanyut Dongthana" 
+
+#คำสั่งให้ระบุว่า directory นั้นต้องการให้ tracked: git init
+#คำสั่งจัดเก็บประวัติการแก้ไข(version)ของไฟล์: git add #(พื้นที่จัดเก็บไฟล์ก่อนนำขึ้น server (statging Area))
+ - git add filename1.thml filename2.html (เพิ่มทีละไฟล์)
+ - git add *.html (เพิ่มไฟล์ .html ทุกไฟล์)
+ - git add . (เพิ่มทุกไฟล์)
+#คำสั่งบันทึกการแก้ไข: git commit 
+#คำสั่งนำโปรเจ็คอัพขึ้น server: git push
+
+#คำสั่งลบไฟล์ใน (statging Area)
+ - git rm --cached . (ลบทั้งหมด)
+ - git rm --cached filename1.html (ลบทีละไฟล์) 
+#คำสั่งตรวจสอบสถานะ: git status
+#คำสั่งดึงไฟล์ version ล่าสุด: git pull
+
+#คำสั่งสร้างไฟล์: touch app.js
+

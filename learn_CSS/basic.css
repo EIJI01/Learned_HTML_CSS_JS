@@ -1,0 +1,33 @@
+html {
+    background-color: rgb(255, 255, 255);
+}
+
+.yai {
+    color: white;
+    background-color: black;
+    border-style: solid;
+    border-radius: 5px;
+}
+.dark {
+    background-color: rgb(31, 30, 30);
+}
+div.container {
+    margin: 0px;
+    background-color: rgb(183, 183, 183);
+}
+.darkMode {
+    background-color: black;
+    border: solid red;
+    border-radius: 10px;
+    color: white;
+    padding: 30px;
+    margin: 10%;
+}
+.blueMode {
+    background-color: rgb(30, 7, 131);
+    border: solid red;
+    border-radius: 10px;
+    color: white;
+    padding: 30px;
+    margin: 10%;
+}

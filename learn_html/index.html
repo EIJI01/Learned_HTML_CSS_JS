@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript เบื้องต้น</title>
+  <script src="../Js/basic.js"></script>
+  <link rel="stylesheet" href="../CSS/basic.css">
+</head>
+
+<!-- <body onload="welcome()"> โหลดหน้า Page -->
+
+  <body>
+  <div class="container">
+    <h1 id="name">Chanyut</h1>
+    <h2 id="name2">Dongthana</h2>
+    <p class="text1">day</p>
+    <div class="a">KUY</div>
+    <div class="b">Pussy</div>
+    <div class="c">YAI</div>
+    <button onclick="alertName()">report</button>
+    <button onclick="showName()">report2</button>
+    <button onclick="plusNumber(10,20)">plusNumber</button>
+    <button onclick="deleteData()">Confirm</button>
+    <button onclick="changeData()">changeData</button>
+    <button onclick="changeDatas()">tag p</button>
+    <button onclick="changeNameClass()">changeNameClass</button>
+    <button onclick="changeThemeDark()">changeThemeDark</button>
+    <button onclick="changeThemeWhite()">changeThemeWhite</button>
+
+    <label for="">input name</label>
+    <input type="text" placeholder="in put name" name="" id="" onfocus="hightLight(this)" onblur="unHightLight(this)">
+    <textarea placeholder="in put name" name="" id="" cols="30" rows="10" onfocus="hightLight(this)" onblur="unHightLight(this)"></textarea>
+
+    <label for="">select menu</label>
+    <select name="" id="menu0"> <!--การเปลี่ยนค่าใน select-->
+      <option value="JavaScript">JavaScript</option>
+      <option value="python">python</option>
+      <option value="bootstrap">bootstrap</option>
+    </select>
+    <p id="display"></p>
+    <ul id="menu">
+      <li id="item1">item1</li>
+      <li id="item2">item2</li>
+      <li id="item3">item3</li>
+      <li id="item4">item4</li>
+    </ul>
+    <button onclick="addItem()">AddItem</button>
+    <button onclick="removeItem()">RemoveItem</button>
+    <button onclick="insteadItem()">InsteadItem</button>
+    <button id="btn">test</button>
+
+    <div id="box">
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae officia assumenda, accusantium dolorum, deleniti porro voluptates aut nihil neque veritatis illum natus ea. Itaque praesentium explicabo debitis vero dolores veritatis!</p>
+      <button onclick="addStyle()">เพิ่ม style</button>
+      <button onclick="deleteStyle()">ลบ style</button>
+      <button onclick="switchStyle()">สลับ style</button>
+    </div>
+    <a href="" onmouseover="hightLight(this)" onmouseout="unHightLight(this)">menu1</a>
+    <a href="" onmouseover="hightLight(this)" 
+onmouseout="unHightLight(this)">menu2</a>
+  </div>
+  <script src="../Js/DOM.js"></script>
+</body>
+
+</html>
