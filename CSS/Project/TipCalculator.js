@@ -22,6 +22,7 @@ const calculateBill = () => {
   const total = tipAmount + bill;
 
   //* The perPersonTotals variable is amount that each person to pay.
+
   const perPersonTotal = total / numberOfPeopleTotal;
 
   //* Show update value to tag HTML.
@@ -34,6 +35,9 @@ const increasePeople = () => {
 
   //* Show update value to tag HTML.
   numberOfPeopleDiv.innerText = numberOfPeopleTotal;
+
+  //* call function for show value on tag {id = perPersonTotal};
+  calculateBill();
 };
 const decreasePeople = () => {
   //* check numberOfPeopleTotal variable have to not equal -number .
@@ -43,5 +47,11 @@ const decreasePeople = () => {
 
     //* Show update value to tag HTML.
     numberOfPeopleDiv.innerText = numberOfPeopleTotal;
+
+    //* call function for show value on tag {id = perPersonTotal};
+    calculateBill();
+  }
+  if (numberOfPeopleTotal <= 0) {
+    perPersonTotalDiv.innerText = `$0.00`;
   }
 };
